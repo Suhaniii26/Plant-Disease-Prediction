@@ -1,6 +1,5 @@
 import os
 import random
-import shutil
 import tensorflow as tf
 
 INPUT_DATASET = r"C:\Users\singh\OneDrive\Documents\Desktop\Plant disease prediction\Dataset"
@@ -179,9 +178,3 @@ for disease in os.listdir(INPUT_DATASET):
         "| Test:",
         len(test_images)
     )
-
-
-print("\n================================")
-print("PREPROCESSING COMPLETED")
-print("================================")
-print("Dataset saved at:", OUTPUT_DATASET)
